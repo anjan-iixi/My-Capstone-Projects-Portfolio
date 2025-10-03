@@ -1,6 +1,6 @@
 # Panic Attack Data Analysis (Power BI + Snowflake)
 
-![](.images/panic-attack-png-image.png)
+![](./images/panic-attack-png-image.png)
 
 ## What are Panic Attacks?
 
@@ -32,14 +32,17 @@ The project shows patterns of panic attacks by **age group, triggers, symptoms, 
 
 ## Screenshots & Insights
 
-* **Age Group Analysis** – Simple Snowflake data upload makes it easy to slice data by age.
-  ![Age Group Analysis](.images/Age_Group_Analysis.png)
+* **Symptoms Breakdown** – Snowflake tables power clear visualizations of patient symptoms in Power BI.
+
+  ![Patients by Symptoms](./images/Patients_by_symptoms.png)
 
 * **Filters & Lifestyle Factors** – With Snowflake’s clean integration, Power BI filters (e.g., drinks per week) are instantly usable.
-  ![Time Series & Filters](.images/Other_Recurement.png)
 
-* **Symptoms Breakdown** – Snowflake tables power clear visualizations of patient symptoms in Power BI.
-  ![Patients by Symptoms](.images/Patients_by_symptoms.png)
+  ![Time Series & Filters](./images/Other_Recurement.png)
+
+* **Age Group Analysis** – Simple Snowflake data upload makes it easy to slice data by age.
+
+  ![Age Group Analysis](./images/Age_Group_Analysis.png)
 
  ---
 
@@ -51,4 +54,5 @@ This dataset is intended **only for learning**. If sharing results, cite the ori
  ---
 
 **Author:** Anjan Paul
-**Academy:** /[Data Space Academy]
+
+**Academy:** [Data Space Academy]
