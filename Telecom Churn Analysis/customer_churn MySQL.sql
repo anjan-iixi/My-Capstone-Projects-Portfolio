@@ -76,7 +76,7 @@ ORDER BY
    TotalCharges DESC
 LIMIT 10;
 
--- 4. Identify which churned customeres used fiber optic in Internet Service   
+-- 4. Identify which churned customers used fiber optic in Internet Service   
 SELECT 
     CustomerID, InternetService, Churn
 FROM
@@ -184,6 +184,21 @@ AS Total_Customers,
        100 * SUM(CASE WHEN Churn = 'Yes' THEN 1 ELSE 0 END) / COUNT(*) AS Churn_Rate_Pct
 FROM telecom_churn
 GROUP BY SeniorCitizen;
+
+-- 15. customers who left within their first 12 months
+SELECT CustomerID,
+       Tenure,
+       MonthlyCharges,
+       TotalCharges,
+       Churn
+FROM telecom_churn
+WHERE Churn = 'Yes' AND Tenure <= 12
+ORDER BY TotalCharges DESC
+LIMIT 20;
+-----
+SELECT COUNT(*) AS Churned_customers
+FROM telecom_churn
+WHERE Churn = "Yes" AND Tenure <=12;
 
 
 -- 00. AgeGroup × InternetService × Contract (counts + churn)
